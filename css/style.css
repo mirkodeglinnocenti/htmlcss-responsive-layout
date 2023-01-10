@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --blue: #0084FD;
+    --lightblue: #B5DDFF;
+    --purple: #9792E4;
+    --dark: #333333;
+    --yellow: #FDC15F;
+}
+
+ul,
+ol,
+menu{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* GENERAL RULES */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.col-3 {
+    flex-basis: calc(100%/3);
+}
+
+.col-2 {
+    flex-basis: calc(100%*2/3);
+}
+
+/* BUTTONS */
+
+.button {
+
+}
+
+.button--white {
+
+}
+
+/* HEADER */
+
+.main-header {
+    background-color: var(--blue);
+    padding: 19px 0;
+    color:  white;
+}
+
+.main-header nav.row {
+    align-items: center;
+}
+
+.nav-item a {
+    line-height: 38px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* MEDIAUERY HEADER */
+
+@media only screen and (max-width: 991px) {
+    .hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+}
+
+/* HERO */
+
+.card {
+    background-color: var(--lightblue);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #333333;
+    min-height: 200px;
+}
+
+/* MEDIAUERY HERO */
+
+@media only screen and (max-width: 575px) {
+    .hero [class^="col-"] {
+        flex-basis: calc(100%);
+    }
+
+}
+
+
+
