@@ -31,6 +31,16 @@ a {
     color: currentColor;
 }
 
+/* DEBUG RULES */
+
+.debug .container {
+    border: 1px solid black;
+}
+
+.debug .card{
+    border: 2px solid #333333;
+}
+
 /* GENERAL RULES */
 
 .container {
@@ -48,30 +58,48 @@ a {
     justify-content: space-between;
 }
 
-
-.col-3 {
-    flex-basis: calc(100%/3);
+.col-4 {
+    flex-basis: calc( (100%/12) * 4);
 }
 
-.col-2 {
-    flex-basis: calc(100%*2/3);
+.col-8 {
+    flex-basis: calc( (100%/12) * 8);
+}
+
+.col-6{
+    flex-basis: 50%;
+}
+
+.title-small{
+    font-size: 22px;
+    color: var(--blue);
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
 }
 
 /* BUTTONS */
 
 .button {
-
+    border-radius: 20px;
+    line-height: 38px;
 }
 
 .button--white {
-
+    background-color: white;
+    color: #333333;
 }
 
 /* HEADER */
 
 .main-header {
     background-color: var(--blue);
-    padding: 19px 0;
+    padding: 19px 0px;
     color:  white;
 }
 
@@ -85,13 +113,19 @@ a {
     padding: 0 16px;
 }
 
+.logo-header{
+    display: block;
+}
+
 .hamburger {
     display: none;
+    font-size: 25px;
 }
 
 /* MEDIAUERY HEADER */
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
+
     .hamburger {
         display: block;
     }
@@ -99,21 +133,58 @@ a {
     .header-nav {
         display: none;
     }
+
+    .container {
+        margin: 0 32px;
+    }
 }
 
 /* HERO */
 
-.card {
-    background-color: var(--lightblue);
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px solid #333333;
-    min-height: 200px;
+.hero{
+    padding: 50px 0;
 }
 
-/* MEDIAUERY HERO */
+.card {
+    background-color: var(--lightblue);
+    padding: 38px 22px;
+    border-radius: 20px;
+    height: 100%;
+}
 
-@media only screen and (max-width: 575px) {
+.card-img img{
+    width: 200px;
+    margin-bottom: -38px;
+}
+
+.card-big{
+    flex-wrap: nowrap;
+}
+
+.card-mid{
+    text-align: center;
+}
+
+.hero .row{
+    gap: 24px;
+}
+
+.hero .col-8{
+    flex-basis: calc( (100%/12) * 8 - (24px/2) );
+}
+
+.hero .col-4-special{
+    flex-basis: calc( (100%/12) * 4 - (24px/2) );
+}
+
+.hero .col-4{
+    flex-basis: calc( (100%/12) * 4 - (48px/3) );
+}
+
+/* MEDIAQUERY HERO */
+
+@media screen and (max-width: 575px) {
+
     .hero [class^="col-"] {
         flex-basis: calc(100%);
     }
