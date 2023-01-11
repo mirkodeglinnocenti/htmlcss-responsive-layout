@@ -237,7 +237,7 @@ a {
     text-align: center;
 }
 
-.hero .row{
+.gutter-24 {
     gap: 24px;
 }
 
@@ -434,3 +434,64 @@ e margin negativo alla riga*/
         text-align: center;
     }
 }
+
+/* Benefits Section */
+
+.benefits-section{
+    background-color: var(--purple);
+    padding: 80px 0 60px;
+}
+
+.benefits-section .card{
+    background-color: white;
+    text-align: left;
+}
+
+.benefits-section .title-section{
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.benefits-section .card-header{
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 30px;
+}
+
+.benefits-section .title-small{
+    color: var(--purple);
+    margin-bottom: 30px;
+}
+
+.benefits-section .button--purple{
+    color: white;
+}
+
+.benefits-section .card-p{
+    line-height: 1.7em;
+    margin-bottom: 30px;
+}
+
+.benefits-section .col-4{
+    flex-basis: calc( (100%/12) * 4 - (48px/3) );
+}
+
+/* Query Benefits Section */
+
+@media screen and (max-width:991px) {
+
+    .benefits-section [class^="col-"] {
+        flex-basis: calc( 50% - 24px );
+    }
+
+}
+
+@media screen and (max-width:575px) {
+
+    .benefits-section [class^="col-"] {
+        flex-basis: 100%;
+    }
+}
+
