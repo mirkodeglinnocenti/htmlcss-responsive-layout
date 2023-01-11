@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 img {
@@ -37,6 +37,10 @@ a {
     border: 1px solid black;
 }
 
+.debug .container-medium {
+    border: 1px solid black;
+}
+
 .debug .card{
     border: 2px solid #333333;
 }
@@ -48,6 +52,11 @@ a {
     margin: 0 auto;
 }
 
+.container-medium{
+    max-width: 875px;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +65,14 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.color-white{
+    color: white;
 }
 
 .col-4 {
@@ -75,6 +92,10 @@ a {
     color: var(--blue);
 }
 
+.title-medium{
+    font-size: 32px;
+}
+
 .mb-30{
     margin-bottom: 30px;
 }
@@ -83,16 +104,47 @@ a {
     margin-bottom: 40px;
 }
 
+.mb-58{
+    margin-bottom: 58px;
+}
+
+.mb-135{
+    margin-bottom: 135px;
+}
+
 /* BUTTONS */
 
 .button {
+    display: inline-block;
     border-radius: 20px;
     line-height: 38px;
+    font-weight: 400;
+}
+
+.button-circle{
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 50px;
+    padding: 0 20px;
 }
 
 .button--white {
     background-color: white;
     color: #333333;
+}
+
+.button--blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.button--purple {
+    background-color: var(--purple);
+    color: currentColor;
+}
+
+.button-large{
+    padding: 0 50px;
 }
 
 /* HEADER */
@@ -181,7 +233,23 @@ a {
     flex-basis: calc( (100%/12) * 4 - (48px/3) );
 }
 
+.code-icon{
+    color: var(--blue);
+    font-size: 90px;
+}
+
 /* MEDIAQUERY HERO */
+
+@media screen and (max-width: 991px) {
+
+    .card-big{
+        flex-wrap: wrap;
+    }
+
+    .card .card-description{
+        flex-grow: 1;
+    }
+}
 
 @media screen and (max-width: 575px) {
 
@@ -191,5 +259,77 @@ a {
 
 }
 
+/* Strategic Planning Section */
 
+.strategic-planning{
+    background-color: var(--purple);
+    padding: 130px 0 65px;
+}
 
+.strategic-planning .row{
+    gap: 65px;
+    align-items: flex-end;
+}
+
+.strategic-planning .col-6{
+    flex-basis: calc( (100%/2) - 32.5px);
+}
+
+/* oppure utilizzando il metodo padding alle colonne 
+e margin negativo alla riga*/
+
+/* .strategic-planning .row{
+    margin: 0 -32.5px;
+}
+
+.strategic-planning .col-6{
+    flex-basis: 50%;
+    padding: 0 32.5px;
+} */
+
+.strategic-planning .title-small{
+    color: black;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.card.text-center.color-black{
+    color: black;
+}
+
+.strategic-planning .card{
+    background-color: white;
+}
+
+.card-img{
+    max-width: 245px;
+}
+
+/* Media Query Strategic Planning section */
+
+@media screen and (max-width: 991px) {
+    
+    .strategic-planning [class^="col-"] {
+        flex-basis: calc(100%);
+    }
+
+    .container-medium {
+        margin: 0 32px;
+    }
+
+    .strategic-planning__img{
+        margin-bottom: 90px;
+        text-align: center;
+    }
+
+    .strategic-planning .row{
+        gap: 35px;
+    }
+
+    .strategic-planning{
+        padding: 65px 0;
+    }
+
+}

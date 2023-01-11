@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script>
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
 
-<body class="debug-">
+<body class="debug">
 
     <!-- inizio header -->
     <header class="main-header">
@@ -60,6 +60,7 @@
     <!-- inizio main -->
     <main>
 
+        <!-- Hero Section -->
         <section class="hero">
 
             <div class="container">
@@ -71,13 +72,15 @@
                         <div class="card row card-big">
 
                             <div class="col-6 card-description">
-                                <h3 class="title-small">Get a demo application</h3>
-                                <p>
+                                <h3 class="title-small mb-40">Get a demo application</h3>
+                                <p class="mb-40">
                                     Lorem ipsum dolor sit amet consectetur.
                                     Obcaecati repellendus veritatis eligendi tempora numquam.
                                     Quam assumenda corporis unde porro perspiciatis?
                                 </p>
-                                <a class="button button--white" href="#">App Store</a>
+                                <a class="button button--blue button-large" href="#">
+                                    <i class="fa-brands fa-apple"></i>
+                                    App Store</a>
                             </div>
 
                             <div class="col-6 card-img">
@@ -108,16 +111,61 @@
                         </div>
                     </div>
 
+                    <!-- Terza Card -->
                     <div class="col-4">
-                        <div class="card"></div>
+                        <div class="card card-mid">
+
+                            <div class="code-icon mb-30">
+                                <i class="fa-solid fa-file-code"></i>
+                            </div>
+
+                            <h3 class="title-small mb-40">Clean Code</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                                Obcaecati repellendus veritatis eligendi tempora numquam.
+                                Quam assumenda corporis unde porro perspiciatis?
+                            </p>
+
+                        </div>
                     </div>
 
+                    <!-- Quarta Card -->
                     <div class="col-4">
-                        <div class="card"></div>
+                        <div class="card card-mid">
+
+                            <div class="code-icon mb-30">
+                                <i class="fa-solid fa-file-code"></i>
+                            </div>
+
+                            <h3 class="title-small mb-40">Clean Code</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                                Obcaecati repellendus veritatis eligendi tempora numquam.
+                                Quam assumenda corporis unde porro perspiciatis?
+                            </p>
+
+                        </div>
                     </div>
 
+                    <!-- Quinta Card -->
                     <div class="col-4">
-                        <div class="card"></div>
+                        <div class="card card-mid">
+
+                            <div class="code-icon mb-30">
+                                <i class="fa-solid fa-file-code"></i>
+                            </div>
+
+                            <h3 class="title-small mb-40">Clean Code</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur.
+                                Obcaecati repellendus veritatis eligendi tempora numquam.
+                                Quam assumenda corporis unde porro perspiciatis?
+                            </p>
+
+                        </div>
                     </div>
 
                 </div>
@@ -125,6 +173,46 @@
             </div>
 
         </section>
+
+        <!-- Strategic Planning Section  -->
+        <section class="strategic-planning">
+            <div class="container-medium">
+                <div class="row">
+                    <div class="col-6 color-white">
+
+                       <img class="mb-135 strategic-planning__img" src="./img/planning1.png" alt="illustrazione donna con pc"> 
+                       <h3 class="title-medium mb-58">Strategic Planning</h3> 
+                       <p >
+                        Lorem ipsum dolor sit amet consectetur.
+                        Accusamus blanditiis deleniti alias laboriosam voluptas.
+                        Consequuntur, voluptatibus ex. Ea, a laboriosam.
+                        Sint enim itaque dicta minus modi.
+                        Rem commodi placeat adipisci molestiae corporis?
+                       </p>
+
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card text-center color-black">
+
+                            <img class="card-img" src="./img/planning2.png" alt="illustrazione donna con pc"> 
+                            <h3 class="title-small mb-30">App Development</h3> 
+                            <p class="italic mb-30">
+                                Lorem ipsum dolor sit amet consectetur.
+                                Accusamus blanditiis deleniti alias laboriosam voluptas.
+                                Consequuntur, voluptatibus ex.
+                            </p>
+                            <a class="button-circle button--purple" href="#">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>        
 
     </main>
     <!-- fine main -->
