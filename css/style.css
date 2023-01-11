@@ -67,6 +67,11 @@ a {
     margin: 0 auto;
 }
 
+.container-footer{
+    max-width: 410px;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +154,10 @@ a {
 
 .mb-58{
     margin-bottom: 58px;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 /* BUTTONS */
@@ -591,6 +600,42 @@ e margin negativo alla riga*/
     }
 
     .container-about-us {
+        margin: 0 32px;
+    }
+}
+
+/* Get Started */
+
+.get-started{
+    padding: 60px 0;
+    background-color: var(--purple);
+    color: white;
+}
+
+
+/* Footer */
+
+.main-footer{
+    padding: 40px 0;
+    background-color: #333333;
+    color: white;
+    font-size: 15px;
+}
+
+.main-footer p:first-child{
+    margin-bottom: 68px;
+}
+
+.link-footer{
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/* Query Footer */
+
+@media screen and (max-width: 575px) {
+
+    .container-footer {
         margin: 0 32px;
     }
 }
