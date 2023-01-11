@@ -57,10 +57,25 @@ a {
     margin: 0 auto;
 }
 
+.container-about-us{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.container-get-started{
+    max-width: 560px;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
     
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
 }
 
 .space-between {
@@ -118,6 +133,10 @@ a {
 
 .title-section{
     font-size: 43px;
+}
+
+.title-big{
+    font-size: 65px;
 }
 
 .mb-30{
@@ -403,8 +422,10 @@ e margin negativo alla riga*/
 }
 
 .testimonial-img{
-    transform: rotateY(45deg);
+    width: 200px;
+    aspect-ratio: 1;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .card-horizontal .col-9 {
@@ -495,3 +516,81 @@ e margin negativo alla riga*/
     }
 }
 
+/* About us section */
+
+.about-us {
+    padding: 95px 0 150px;
+}
+
+.about-us .row{
+    gap: 60px;
+}
+
+.about-us .col-8.column{
+    gap: 60px;
+}
+
+.about-us .card-p{
+    line-height: 2.2em;
+    font-size: 18px;
+}
+
+.about-us .title-big{
+    color: var(--purple);
+}
+
+.img-about-us{
+    border-radius: 50%;
+    width: 245px;
+}
+
+.card-quote{
+    color: var(--purple);
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.about-us .col-3.column{
+    gap: 30px;
+}
+
+.about-us .button{
+    align-self: flex-start;
+    padding: 0 14px;
+    font-size: 16px;
+    color: white;
+}
+
+.quote-icon{
+    font-size: 60px;
+    color: var(--purple);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.about-us--header-right{
+    position: relative;
+    width: 245px;
+}
+
+/* Query About us */
+
+@media screen and (max-width: 991px) {
+
+    .about-us .row{
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .about-us .row{
+        flex-wrap: wrap;
+    }
+
+    .container-about-us {
+        margin: 0 32px;
+    }
+}
